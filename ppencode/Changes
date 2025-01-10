@@ -1,0 +1,6 @@
+Revision history for Perl extension ppencode.
+
+0.01  Fri Sep 30 16:44:25 2022
+	- original version; created by h2xs 1.23 with options
+		-AX -n ppencode
+

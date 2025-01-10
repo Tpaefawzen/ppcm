@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+
+# ppcm. ppencode code mapper.
+#
+# Copyright (C) 2023 Tpaefawzen <GitHub: Tpaefawzen>
+# This work is free. You can redistribute it and/or modify it under the
+# terms of the Do What The Fuck You Want To Public License, Version 2,
+# as published by Sam Hocevar. See the COPYING file for more details.
+
+use v5.35;
+
+my %code2word=qw[
+0 abs 1 accept 2 alarm 3 and 4 bind 5 binmode 6 bless 7 caller 8 chdir 9 chmod 10 chomp 11 chop 12 chown 13 chr 14 chroot 15 close 16 closedir 17 cmp 
+18 connect 19 continue 20 cos 21 crypt 22 dbmclose 23 dbmopen 24 defined 25 delete 26 die 27 do 28 dump 29 each 30 else 31 elsif 32 endgrent 33 
+endhostent 34 endnetent 36 endprotoent 37 endpwent 38 endservent 39 eof 40 eq 41 eval 42 exec 43 exists 44 exit 45 exp 46 fcntl 47 fileno 48 flock 49 
+for 50 foreach 51 fork 52 formline 53 ge 54 getc 55 getgrent 56 getgrgid 57 getgrnam 58 gethostbyaddr 59 gethostbyname 60 gethostent 61 getlogin 62 
+getnetbyaddr 63 getnetbyname 64 getnetent 65 getpeername 66 getpgrp 67 getppid 68 getpriority 69 getprotobyname 70 getprotobynumber 71 getprotoent 72 
+getpwent 73 getpwnam 74 getpwuid 75 getservbyname 76 getservbyport 77 getservent 78 getsockname 79 getsockopt 80 glob 81 gmtime 82 goto 83 grep 84 gt 
+85 hex 86 if 87 import 88 index 89 int 90 ioctl 91 join 92 keys 93 kill 94 last 95 lc 96 lcfirst 97 le 98 length 99 link 100 listen 101 local 102 
+localtime 103 log 104 lstat 105 lt 106 m 107 map 108 mkdir 109 msgctl 110 msgget 111 msgrcv 112 msgsnd 113 my 114 ne 115 next 116 no 117 not 118 oct 
+119 open 120 opendir 121 or 122 ord 123 pack 124 pipe 125 pop 126 pos 127 print 128 printf 129 push 130 q 131 qq 132 qr 133 quotemeta 134 qw 135 qx 
+136 rand 137 read 138 readdir 139 readlink 140 recv 141 redo 142 ref 143 rename 144 require 145 reset 146 return 147 reverse 148 rewinddir 149 rindex 
+150 rmdir 151 s 152 scalar 153 seek 154 seekdir 155 select 156 semctl 157 semget 158 semop 159 send 160 setgrent 161 sethostent 162 setnetent 163 
+setpgrp 164 setpriority 165 setprotoent 166 setpwent 167 setservent 168 setsockopt 169 shift 170 shmctl 171 shmget 172 shmread 173 shmwrite 174 
+shutdown 175 sin 176 sleep 177 socket 178 socketpair 179 sort 180 splice 181 split 182 sprintf 183 sqrt 184 srand 185 stat 186 study 187 substr 188 
+symlink 189 syscall 190 sysread 191 system 192 syswrite 193 tell 194 telldir 195 tie 196 time 197 times 198 tr 199 truncate 200 uc 201 ucfirst 202 
+umask 203 undef 204 unlink 205 unpack 206 unshift 207 untie 208 use 209 utime 210 values 211 vec 212 wait 213 waitpid 214 wantarray 215 warn 216 
+while 217 write 218 x 219 xor 220 y 
+];
